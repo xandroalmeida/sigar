@@ -5,10 +5,10 @@ cmake_minimum_required(VERSION 2.6)
 INCLUDE(CheckIncludeFiles)
 INCLUDE(CheckFunctionExists)
 INCLUDE(CheckTypeSize)
-INCLUDE(CTest)
+#INCLUDE(CTest)
 INCLUDE(InstallRequiredSystemLibraries)
 
-ENABLE_TESTING()
+#ENABLE_TESTING()
 
 SET(CPACK_PACKAGE_VERSION_MAJOR "1")
 SET(CPACK_PACKAGE_VERSION_MINOR "6")
@@ -30,6 +30,9 @@ IF(WIN32)
 ENDIF(WIN32)
 
 ADD_SUBDIRECTORY(src build-src)
-ADD_SUBDIRECTORY(tests build-tests)
+#ADD_SUBDIRECTORY(tests build-tests)
 ADD_SUBDIRECTORY(include build-include)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "modules")
+
 
