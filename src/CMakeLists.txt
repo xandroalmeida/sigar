@@ -112,4 +112,4 @@ INSTALL(TARGETS sigar
 	LIBRARY DESTINATION lib
 	)
 
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "modules")
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "third_party")

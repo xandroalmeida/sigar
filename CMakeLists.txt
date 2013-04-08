@@ -33,6 +33,6 @@ ADD_SUBDIRECTORY(src build-src)
 #ADD_SUBDIRECTORY(tests build-tests)
 ADD_SUBDIRECTORY(include build-include)
 
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "modules")
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "third_party")
 
 
